@@ -19,7 +19,7 @@ struct Jugador
 struct NodoJugador
 {
     Jugador jugador;     // Datos del jugador
-    NodoJugador *sgte;    // Puntero al siguiente nodo en la lista
+    NodoJugador *sgte;    // Puntero al siguiente nodo en la lista 
 };
 
 // Estructura Equipo: código identificador y puntero a la lista de jugadores
@@ -40,7 +40,7 @@ void inicializarEquipos(Equipo equipos[], int cantidad)
 }
 
 // Crea y agrega un nuevo nodo al final de la lista de jugadores; devuelve el puntero (posible nueva cabeza)
-NodoJugador *agregarNodo(NodoJugador *jugadores, string nombreJugador, int habilidad)
+NodoJugador *agregarNodo(NodoJugador *jugadores, string nombreJugador, int habilidad)// Agrega un nuevo jugador al final de la lista
 {
     NodoJugador *nuevo = new NodoJugador;           // Reserva memoria para un nuevo nodo
     nuevo->jugador.nombre = nombreJugador;         // Asigna el nombre
@@ -64,7 +64,7 @@ NodoJugador *agregarNodo(NodoJugador *jugadores, string nombreJugador, int habil
 }
 
 // Busca el equipo por código y agrega un jugador usando agregarNodo
-void agregarJugador(Equipo equipos[], int codigoEquipo, string nombreJugador, int habilidad, int cantidad)
+void agregarJugador(Equipo equipos[], int codigoEquipo, string nombreJugador, int habilidad, int cantidad)// Agrega un jugador a un equipo específico (osea a la lista de equipos que le corresponde el codigo)
 {
     // Recorre el arreglo de equipos para encontrar el código coincidente
     for (int i = 0; i < cantidad; i++)
