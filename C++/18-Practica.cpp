@@ -140,3 +140,6 @@ int mostrarDNIClienteConRutinaMasIntensa(NodoCliente* listaClientes) {
     // Si ningún cliente tiene rutinas, podrías lanzar una excepción, retornar 0, o manejarlo según tu lógica
     return 0;
 }
+
+int main(){
+}

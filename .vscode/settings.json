@@ -45,7 +45,10 @@
 "editor.tabCompletion": "on",
 "github.copilot.inlineSuggest.enable": true,
 "github.copilot.enable": {
-  "*": true
+  "*": true,
+  "plaintext": false,
+  "markdown": false,
+  "scminput": false
 },
 "github.copilot.chat.enable": true
 
